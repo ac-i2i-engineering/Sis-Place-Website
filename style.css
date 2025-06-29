@@ -1,0 +1,375 @@
+/* Basic Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #485a62;
+    color: #f0ebe1;
+}
+
+a {
+    color: #f0ebe1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* Footer */
+footer {
+    background-color: #3e4d55;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h3, .footer-column h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Home Page */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0ebe1;
+    padding: 30px 50px;
+    border: 3px solid #6b8490;
+    width: 70%;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 7em;
+    margin: 0;
+    color: #3e4d55;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.hero .hero-text p {
+    color: #6b8490;
+    margin: 10px 0 0;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.intro {
+    background-color: #f0ebe1;
+    color: #3e4d55;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.intro-heading {
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+}
+
+.intro-body {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+}
+
+.provide {
+    padding: 40px 0;
+}
+
+.provide-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.provide-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.provide-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.mission {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.mission-title {
+    flex: 1;
+}
+
+.mission-text {
+    flex: 2;
+    text-align: left;
+}
+
+.contact-form-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-form-section form {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-sub-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.sub-label {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+input, textarea {
+    background-color: #5e727c;
+    border: 1px solid #f0ebe1;
+    color: #f0ebe1;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5e727c;
+    color: #f0ebe1;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+/* About Page */
+.about-section {
+    padding: 40px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-group label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Contact Page */
+.contact-page-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-page-section .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+.contact-page-section form {
+    text-align: left;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Header */
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav ul {
+        padding: 0;
+        justify-content: center;
+    }
+    
+    /* General */
+    .section-title {
+        font-size: 2.5em;
+    }
+    
+    /* Hero */
+    .hero .hero-text {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero .hero-text p {
+        font-size: 1.2em;
+    }
+    
+    /* Intro */
+    .intro-heading {
+        font-size: 2em;
+    }
+
+    .intro-body {
+        font-size: 1.1em;
+    }
+
+    /* Provide Grid */
+    .provide-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Mission Section */
+    .mission-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mission-text {
+        text-align: center;
+    }
+
+    /* Form */
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* About Page */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+    
+    /* Footer */
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .provide-grid {
+        grid-template-columns: 1fr;
+    }
+} 
