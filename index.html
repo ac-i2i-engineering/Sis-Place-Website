@@ -81,29 +81,38 @@
             <div class="container">
                 <h2 class="section-title">contact us</h2>
                 <p>Navigating something tough? Want to learn more about Sis' Place or get involved? Reach out - we're here.</p>
-                <form action="https://formsubmit.co/aleisewoodford@sisplace.org" method="POST">
-                    <input type="hidden" name="_next" value="thanks.html">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="de74f5c3-8b8a-4a44-8d2a-df3350271008">
+                    
+                    <!-- Custom Confirmation / Success Page -->
+                    <input type="hidden" name="redirect" value="thanks.html">
+                    
                     <div class="form-group">
                         <label for="first-name">Name (required)</label>
                         <div class="form-row">
                             <div class="form-sub-group">
-                                <input type="text" id="first-name" name="first-name">
+                                <input type="text" id="first-name" name="first_name" required>
                                 <label for="first-name" class="sub-label">First Name</label>
                             </div>
                             <div class="form-sub-group">
-                                <input type="text" id="last-name" name="last-name">
+                                <input type="text" id="last-name" name="last_name">
                                 <label for="last-name" class="sub-label">Last Name</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email">Email (required)</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message (required)</label>
-                        <textarea id="message" name="message" rows="5"></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
                     <button type="submit">Send</button>
                 </form>
             </div>
