@@ -51,6 +51,26 @@ header nav ul li a {
     font-size: 2em;
 }
 
+/* Language Toggle */
+.lang-toggle {
+    background: none;
+    border: 1px solid #f0ebe1;
+    color: #f0ebe1;
+    font-weight: bold;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 4px 12px;
+    border-radius: 3px;
+    width: auto;
+    align-self: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.lang-toggle:hover {
+    background-color: rgba(240, 235, 225, 0.15);
+}
+
 /* Footer */
 footer {
     background-color: #f0ebe1;
@@ -75,6 +95,25 @@ footer {
     font-weight: bold;
     font-style: italic;
     margin-top: 30px;
+}
+
+.footer-title.footer-disclaimer {
+    font-size: 1rem;
+    font-style: normal;
+    max-width: 28em;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid rgba(62, 77, 85, 0.2);
+}
+
+.footer-column p a {
+    color: #3e4d55;
+    text-decoration: underline;
 }
 
 .footer-column h4 {
@@ -205,6 +244,79 @@ footer {
     font-family: 'Playfair Display', serif;
 }
 
+/* Community Section */
+.community {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.community-intro {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.community-video {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto 40px;
+    aspect-ratio: 16 / 9;
+}
+
+.community-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.community-instagram-cta {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.community-instagram-cta a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.instagram-grid > * {
+    height: 700px;
+    overflow: hidden;
+}
+
+.instagram-grid .instagram-media {
+    margin: 0 !important;
+    min-width: unset !important;
+    width: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .contact-form-section {
     padding: 40px 0;
     text-align: center;
@@ -269,6 +381,60 @@ button {
     align-self: center;
     width: 200px;
     text-transform: uppercase;
+}
+
+/* Donate Page */
+.donate-section {
+    padding: 40px 0 80px;
+    text-align: center;
+}
+
+.donate-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+
+.donate-intro {
+    font-size: 1.4em;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.donate-option {
+    margin-bottom: 50px;
+}
+
+.donate-option h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.donate-option p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.donate-detail {
+    font-weight: bold;
+    font-size: 1.3em !important;
+    margin: 8px 0 20px !important;
+}
+
+.donate-button {
+    display: inline-block;
+    background-color: #5e727c;
+    color: #f0ebe1;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.donate-button:hover {
+    background-color: #485a62;
 }
 
 /* About Page */
