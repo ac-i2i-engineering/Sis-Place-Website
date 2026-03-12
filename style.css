@@ -304,12 +304,15 @@ header nav ul li a:hover {
 
 .community-video {
     position: relative;
-    max-width: 680px;
-    margin: 0 auto 40px;
+    max-width: 720px;
+    margin: 0 auto 48px;
     aspect-ratio: 16 / 9;
-    border-radius: 6px;
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.28);
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.18),
+        0 12px 40px rgba(0, 0, 0, 0.38);
+    outline: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .community-video iframe {
@@ -318,7 +321,7 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 6px;
+    border: none;
 }
 
 .community-instagram-cta {
